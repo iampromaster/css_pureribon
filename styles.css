@@ -1,0 +1,68 @@
+@import url("https://fonts.cdnfonts.com/css/poppins");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background: #f8f8f8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  background: #fff;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+  border-radius: 2cqw;
+}
+
+.card .ribbon {
+  position: absolute;
+  width: 280px;
+  height: 50px;
+  background: #4070f4;
+  top: 40px;
+  left: -15px;
+  border-radius: 30px;
+  border-bottom-left-radius: 0px;
+}
+
+.card .ribbon::before {
+  position: absolute;
+  content: '';
+  width: 15px;
+  height: 30px;
+  background: #2d4ac9;
+  top: 50px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  z-index: 2;
+}
+
+.card .ribbon::after {
+  position: absolute;
+  content: '';
+  width: 15px;
+  height: 15px;
+  background: #4070f4;
+  top: 50px;
+  z-index: 1;
+}
+.card .ribbon b {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: #fff;
+  font-size: 20px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-family: sans-serif;
+}
